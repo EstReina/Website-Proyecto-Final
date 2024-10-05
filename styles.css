@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-	--primary-color: #c7a17a;
-	--background-color: #f9f5f0;
+	--primary-color: #cb7da2;
+	--background-color: #f8c3c1;
 	--dark-color: #151515;
 }
 
@@ -35,72 +35,20 @@ html {
 /*               HEADER               */
 /* ********************************** */
 .container-hero {
-	background-color: var(--background-color);
+	background-color: #ecddc5;
+	display: flex;
+	margin: 0 auto; /* Esto lo centra */
+	text-align: center;
+	padding: 10px 0;
 }
 
-.hero {
-	display: flex;
-	justify-content: space-between;
+.container-hero img {
+	width: 120px;
+	height: auto;
 	align-items: center;
-	padding: 2rem 0;
+	margin: auto;
 }
 
-.customer-support {
-	display: flex;
-	align-items: center;
-	gap: 2rem;
-}
-
-.customer-support i {
-	font-size: 3.3rem;
-}
-
-.content-customer-support {
-	display: flex;
-	flex-direction: column;
-}
-
-.container-logo {
-	display: flex;
-	align-items: center;
-	gap: 0.5rem;
-}
-
-.container-logo i {
-	font-size: 3rem;
-}
-
-.container-logo h1 a {
-	text-decoration: none;
-	color: #000;
-	font-size: 3rem;
-	text-transform: uppercase;
-	letter-spacing: -1px;
-}
-
-.container-user {
-	display: flex;
-	gap: 1rem;
-	cursor: pointer;
-}
-
-.container-user .fa-user {
-	font-size: 3rem;
-	color: var(--primary-color);
-	padding-right: 2.5rem;
-	border-right: 1px solid #e2e2e2;
-}
-
-.container-user .fa-basket-shopping {
-	font-size: 3rem;
-	color: var(--primary-color);
-	padding-left: 1rem;
-}
-
-.content-shopping-cart {
-	display: flex;
-	flex-direction: column;
-}
 
 /* ************* NAVBAR ************* */
 .container-navbar {
@@ -128,9 +76,10 @@ html {
 }
 
 .menu a {
+	
 	text-decoration: none;
 	font-size: 1.3rem;
-	color: var(--dark-color);
+	color: #fff;
 	font-weight: 600;
 	text-transform: uppercase;
 	position: relative;
@@ -154,48 +103,24 @@ html {
 }
 
 .menu a:hover {
-	color: #fff;
+	color: #000;
 }
 
-.search-form {
-	position: relative;
-	display: flex;
-	align-items: center;
-	border: 2px solid #fff;
-	border-radius: 2rem;
-	background-color: #fff;
-	height: 4.4rem;
-	overflow: hidden;
+.social-icons {
+    margin-top: 0px;
+}
+.social-icons a {
+    margin-right: 10px;
+    /* background-color:  var(--background-color); */
+	/* background-color:  #fff; */
+    padding: 5px;
+    border-radius: 100%;
+    display: inline-block;
 }
 
-.search-form input {
-	outline: none;
-	font-family: inherit;
-	border: none;
-	width: 25rem;
-	font-size: 1.4rem;
-	padding: 0 2rem;
-	color: #777;
-	cursor: pointer;
-}
-
-.search-form input::-webkit-search-cancel-button {
-	appearance: none;
-}
-
-.search-form .btn-search {
-	border: none;
-	background-color: var(--primary-color);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-	padding: 1rem;
-}
-
-.btn-search i {
-	font-size: 2rem;
-	color: #fff;
+.social-icons img{
+	width: 25px;
+	height: auto;
 }
 
 /* ********************************** */
@@ -205,26 +130,26 @@ html {
 	background-image: linear-gradient(100deg, #000000, #00000020),
 		url('img/banner.jpg');
 	height: 60rem;
-	background-size: cover;
-	background-position: center;
+	background-size:cover;
+	background-position: bottom;
 }
 
 .content-banner {
 	max-width: 90rem;
 	margin: 0 auto;
-	padding: 25rem 0;
+	padding: 20rem 0;
 }
 
 .content-banner p {
 	color: var(--primary-color);
-	font-size: 1.2rem;
+	font-size: 2.0rem;
 	margin-bottom: 1rem;
 	font-weight: 500;
 }
 
 .content-banner h2 {
 	color: #fff;
-	font-size: 3.5rem;
+	font-size: 4.5rem;
 	font-weight: 500;
 	line-height: 1.2;
 }
@@ -238,6 +163,7 @@ html {
 	padding: 1rem 3rem;
 	text-transform: uppercase;
 	border-radius: 3rem;
+	font-size: 1.5rem;
 }
 
 /* ********************************** */
@@ -318,10 +244,10 @@ html {
 }
 
 .category-moca {
-	background-image: linear-gradient(#00000080, #00000080),
+	background-image: linear-gradient(#000000a7, #000000a7),
 		url('img/moca-category.jpg');
 	background-size: cover;
-	background-position: bottom;
+	background-position: center;
 	background-repeat: no-repeat;
 }
 
@@ -329,7 +255,7 @@ html {
 	background-image: linear-gradient(#00000080, #00000080),
 		url('img/capuchino-category.jpg');
 	background-size: cover;
-	background-position: center;
+	background-position:center;
 	background-repeat: no-repeat;
 }
 
@@ -344,8 +270,9 @@ html {
 .card-category p {
 	font-size: 2.5rem;
 	color: #fff;
-	text-transform: capitalize;
+	text-transform: uppercase;
 	position: relative;
+	
 }
 
 .card-category p::after {
@@ -363,6 +290,7 @@ html {
 	font-size: 1.6rem;
 	color: #fff;
 	cursor: pointer;
+	font-weight:600;
 }
 
 .card-category span:hover {
