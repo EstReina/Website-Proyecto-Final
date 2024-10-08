@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f4f8;
+}
+
+form {
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  color: #555;
+  font-weight: bold;
+}
+
+.nonbold{
+  font-size: 16px;
+  font-weight: normal;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: all 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #66afe9;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+  outline: none;
+}
+
+/*Radio Generos*/
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-group > label{
+  padding-bottom: 10px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.radio-option label {
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+/*Pais*/
+
+input[name="pais"] {
+  border: 2px solid #ccc;
+  border-radius: 10px 10px 10px 10px;
+  font-size: 18px;
+  padding: 5px;
+  height: 35px;
+  width: 350px;
+}
+
+.pais, .fecha{
+  padding-top: 30px;
+}
+
+/*Checkbox Oferta*/
+
+.checkbox-option {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+
+/*Comentarios Adicionales*/
+
+.Com_Add{
+  padding-top: 30px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+/* Boton Archivo */
+
+input[type="file"] {
+  margin-bottom: 20px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.divfile{
+  padding-left: 80px;
+}
+
+.custom-file-upload {
+  border-radius: 20px;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: #0a91ff;
+  color: white;
+}
+
+.material-symbols-outlined {
+  vertical-align:middle ;
+  padding-right: 5px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/*Boton Envio y Reset*/
+
+.buttons{
+  padding-top: 20px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  width: 48%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"] {
+  background-color: #5cb85c;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: #4cae4c;
+}
+
+input[type="reset"] {
+  background-color: #d9534f;
+  color: white;
+}
+
+input[type="reset"]:hover {
+  background-color: #c9302c;
+}
+
