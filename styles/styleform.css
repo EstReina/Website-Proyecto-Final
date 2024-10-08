@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap');
+
+
+:root {
+	--primary-color: #cb7da2;
+	--background-color: #ecddc5;
+	--dark-color: #151515;
+
+}
+
+
 * {
   box-sizing: border-box;
 }
@@ -9,8 +21,33 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  background-color: #f0f4f8;
+  background-color: var(--background-color);
 }
+
+.container-hero {
+	background-color: #ecddc5;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    flex-direction:row;
+	padding: 0;
+	margin: 0;
+}
+
+.container-hero p {
+    margin: 0;
+	padding-right: 5px;
+	font-family: "Sue Ellen Francisco", cursive;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 45px;
+	text-shadow: 
+          1.2px 1.2px 0 black,  
+          -1.2px 1.2px 0 black, 
+          1.2px  -1.2px 0 black, 
+          -1.2px -1.2px 0 black;
+}
+
 
 form {
   background-color: white;
@@ -65,36 +102,13 @@ input[type="tel"]:focus,
 input[type="date"]:focus,
 textarea:focus,
 select:focus {
-  border-color: #66afe9;
-  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 8px rgba(203, 125, 162 0.6);
   outline: none;
 }
 
-/*Radio Generos*/
-
-.radio-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.radio-group > label{
-  padding-bottom: 10px;
-}
-
-.radio-option {
-  display: flex;
-  align-items: center;
-  margin-bottom: 5px;
-}
-
-.radio-option label {
-  font-size: 16px;
-  margin-left: 5px;
-}
-
 /*Pais*/
-
-input[name="pais"] {
+select[name="pais"] {
   border: 2px solid #ccc;
   border-radius: 10px 10px 10px 10px;
   font-size: 18px;
@@ -103,8 +117,21 @@ input[name="pais"] {
   width: 350px;
 }
 
-.pais, .fecha{
-  padding-top: 30px;
+select[name="city"] {
+  border: 2px solid #ccc;
+  border-radius: 10px 10px 10px 10px;
+  font-size: 18px;
+  padding: 5px;
+  height: 35px;
+  width: 350px;
+}
+
+.pais{
+  padding-bottom: 15px;
+}
+
+div.hidden {
+  display: none;
 }
 
 /*Checkbox Oferta*/
@@ -142,19 +169,26 @@ input[type="file"] {
 }
 
 .divfile{
-  padding-left: 80px;
+  display: flex;
 }
 
 .custom-file-upload {
+  margin-right: 20px;
   border-radius: 20px;
   display: inline-block;
   padding: 6px 12px;
   cursor: pointer;
-  background-color: #0a91ff;
+  background-color: #cb7da2;
   color: white;
 }
 
+.custom-file-upload {
+  font-size: 13px;
+  text-align: center;
+}
+
 .material-symbols-outlined {
+  text-align: start;
   vertical-align:middle ;
   padding-right: 5px;
   font-variation-settings:
@@ -166,36 +200,23 @@ input[type="file"] {
 
 /*Boton Envio y Reset*/
 
-.buttons{
-  padding-top: 20px;
-}
-
-input[type="submit"],
-input[type="reset"] {
+input[type="submit"] {
+  padding-left: 10px;
   width: 48%;
   padding: 10px;
   font-size: 16px;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 input[type="submit"] {
-  background-color: #5cb85c;
+  background-color: #4cae4c;
   color: white;
 }
 
 input[type="submit"]:hover {
-  background-color: #4cae4c;
-}
-
-input[type="reset"] {
-  background-color: #d9534f;
-  color: white;
-}
-
-input[type="reset"]:hover {
-  background-color: #c9302c;
+  background-color: #91c2a2;
 }
 

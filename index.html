@@ -7,7 +7,7 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
-		<title>Endulzate - El mejor lugar para comer</title>
+		<title>Inicio - Endulzate</title>
 		<link rel="stylesheet" href="styles/styles.css" />
 	</head>
 	<body>
@@ -28,17 +28,25 @@
 				<nav class="navbar container">
 					<i class="fa-solid fa-bars"></i>
 					<ul class="menu">
-						<li><a href="#">Inicio</a></li>
-						<li><a href="#">Productos</a></li>
-						<li><a href="#">Servicios</a></li>
-						<li><a href="#">Sobre Nosotros</a></li>
+						<li><a href="#" id="inicio">Inicio</a></li>
+						<!-- Submenú de Productos -->
+						<li class="has-submenu">
+							<a>Productos</a>
+							<ul class="submenu">
+								<li><a href="#">Deliciosos Desayunos</a></li>
+								<li><a href="#">Asombrosos Regalos</a></li>
+								<li><a href="#">Dulces Adiciones</a></li>
+							</ul>
+						</li>
+						<li><a href="#servicios">Servicios</a></li>
+						<li><a href="#Weare">Sobre nosotros</a></li>
 						<li><a href="Contacto.html" target="_blank">Contacto</a></li>
 					</ul>
 
 					<div class="social-icons">
-						<a href="#"><img src="/../img/instagram.png" alt="Instagram" class="social-footer"></a>
-						<a href="#"><img src="/../img/tiktok.png" alt="TikTok" class="social-footer"></a>
-						<a href="#"><img src="/../img/whatsapp.png" alt="WhatsApp" class="social-footer"></a>
+						<a href="https://www.instagram.com/endulzatemedellin?igsh=djNmdTV0dWI5NGQ0" target="_blank"><img src="/../img/instagram.png" alt="Instagram" class="social-footer"></a>
+						<a href="https://www.tiktok.com/@endulzatemedellinn?_t=8qMCCEjeyY9&_r=1" target="_blank"><img src="/../img/tiktok.png" alt="TikTok" class="social-footer"></a>
+						<a href="https://wa.me/573008651888" target="_blank"><img src="/../img/whatsapp.png" alt="WhatsApp" class="social-footer"></a>
 					</div>
 				</nav>
 			</div>
@@ -46,70 +54,85 @@
 
 		<section class="banner">
 			<div class="content-banner">
-				<p>¿Porque Endúlzate?</p>
-				<h2>Frescos <br /> y Delicioso todos los días</h2> 
-				<a href="#">Endúlzate ahora</a>
+				<p>¿Por qué Endúlzate?</p>
+				<h2>Frescos <br /> y Deliciosos todos los días</h2> 
+				<a href="Contacto.html" target="_blank">Endúlzate ahora</a>
 			</div>
 		</section>
 
 		<main class="main-content">
-			<section class="container container-features">
+			<section class="container container-features" id="servicios">
 				<div class="card-feature">
 					<i class="fa-solid fa-plane-up"></i>
 					<div class="feature-content">
-						<span>PENDIENTES</span>
-						<p>En pedido superior a $150</p>
+						<span>Domicilios</span>
+						<p>Precio sujeto a ciudad (preguntar)</p>
 					</div>
 				</div>
 				<div class="card-feature">
 					<i class="fa-solid fa-wallet"></i>
 					<div class="feature-content">
-						<span>PENDIENTES</span>
-						<p>100% garantía de devolución de dinero</p>
+						<span>Desayunos sorpresa</span>
+						<p>Diversidad para que te antojes</p>
 					</div>
 				</div>
 				<div class="card-feature">
 					<i class="fa-solid fa-gift"></i>
 					<div class="feature-content">
-						<span>PENDIENTES</span>
-						<p>Ofrece bonos especiales con regalo</p>
+						<span>Regalos personalizados</span>
+						<p>Portaretratos con fotos, llaveros, <br> tazas, peluches, y más...</p>
 					</div>
 				</div>
 				<div class="card-feature">
 					<i class="fa-solid fa-headset"></i>
 					<div class="feature-content">
-						<span>PENDIENTES</span>
-						<p>LLámenos 24/7 al 123-456-7890</p>
+						<span>Paquetess empresariales</span>
+						<p>Ármalos a tu gusto y presupuesto</p>
 					</div>
 				</div>
 			</section>
-
-			<section class="container top-categories">
-				<h1 class="heading-1">Nuestras Categorías</h1>
-				<div class="container-categories">
-					<div class="card-category category-moca">
-						<p>¡Deliciosos Desayunos!</p>
-						<span>Ver más</span>
-					</div>
-					<div class="card-category category-expreso">
-						<p>¡Asombrosos Regalos!</p>
-						<span>Ver más</span>
-					</div>
-					<div class="card-category category-capuchino">
-						<p>¡Dulces Adiciones!</p>
-						<span>Ver más</span>
-					</div>
-				</div>
-			</section>
-
 			<section class="container top-products">
-				<h1 class="heading-1">Mejores Productos</h1>
+				<!-- <h1 class="heading-1">Mejores Productos</h1> -->
 
 				<!-- <div class="container-options">
 					<span class="active">Destacados</span>
 					<span>Más recientes</span>
 					<span>Mejores Vendidos</span>
 				</div> -->
+
+			<section class="container top-categories">
+				<h1 class="heading-1">Nuestras Categorías</h1>
+				<div class="container-categories">
+					<div class="card-category category-moca">
+						<p>¡Deliciosos desayunos!</p>
+						<span>Empieza el día con una sonrisa y un desayuno lleno de sorpresas.
+							Nuestros desayunos no solo son deliciosos, están diseñados para conquistar
+							los sentidos y llenar de alegría cualquier ocasión. 
+							Cada detalle, desde los ingredientes frescos hasta la presentación cuidada,
+							está pensado para sorprender. ¡Sorprende a tus seres queridos con un
+							desayuno que recordarán siempre!
+						</span>
+					</div>
+					<div class="card-category category-expreso">
+						<p>¡Endúlza tu vida!</p>
+						<span>Sorprende con un dulce regalo lleno de encanto.
+						Nuestras cajitas de dulces vienen decoradas con 
+						esmero y acompañadas de tarjetas personalizadas,
+						ideales para cualquier ocasión.
+						Ya sea para endulzar un momento especial o
+						simplemente para decir "te quiero", estas cajas
+						harán que cada bocado sea inolvidable.</span>
+					</div>
+					<div class="card-category category-capuchino">
+						<p>¡Adiciones que Marcan la Diferencia!</p>
+						<span>¡Haz que tu regalo sea aún más especial!
+							Compleméntalo con nuestros portarretratos personalizados, llaveros únicos,
+							tazas con estilo, peluches adorables, globos coloridos y mucho más.
+							Cada adición está pensada para darle ese toque extra de amor y 
+							emoción que hará de cualquier detalle, un recuerdo inolvidable.</span>
+					</div>
+				</div>
+			</section>
 
 				<div class="container-products">
 					<!-- Producto 1 -->
@@ -137,7 +160,7 @@
 								<i class="fa-solid fa-star"></i>
 								<i class="fa-regular fa-star"></i>
 							</div>
-							<h3>Sandwich Desayuno</h3>
+							<h3>Sandwich</h3>
 							<span class="add-cart">
 								<i class="fa-solid fa-basket-shopping"></i>
 							</span>
@@ -271,7 +294,7 @@
 				/>
 			</section>
 
-			<section class="container-blogs-all">
+			<section class="container-blogs-all" id="Weare">
 				<h1 class="heading-1">Sobre Nosotros</h1>
 
 				<div class="container-blogs">
@@ -327,11 +350,11 @@
 					<div class="contact-info">
 						<p class="title-footer">Información de Contacto</p>
 						<ul>
-							<li>
-								Medellin - Antioquia - Colombia
-							</li>
-							<li>Teléfono: +57 300 8651888</li>
-							<li>EmaiL: endulzatemedellin@gmail.com</li>
+							<li><strong>Ubicación:</strong> Medellin - Antioquia - Colombia</li>
+							<li><strong>Teléfono:</strong> +57 300 8651888</li>
+							<li><strong>Email:</strong> endulzatemedellin@gmail.com</li>
+							<li><strong>Horario:</strong> <br> Lunes a Sábado de 7:00am a 04:00pm
+										<br>Festividades especiales de 8:00am a 02:00pm</li>
 						</ul>
 						<div class="social-icons">
 							<a href="https://www.tiktok.com/@endulzatemedellinn?_t=8qMCCEjeyY9&_r=1" target="_blank">
@@ -355,11 +378,11 @@
 					<div class="information">
 						<p class="title-footer">Información</p>
 						<ul>
-							<li><a href="#">Acerca de Nosotros</a></li>
-							<li><a href="#">Información Delivery</a></li>
-							<li><a href="#">Politicas de Privacidad</a></li>
-							<li><a href="#">Términos y condiciones</a></li>
-							<li><a href="#">Contactános</a></li>
+							<li><a href="#">Deliciosos Desayunos</a></li>
+							<li><a href="#">Asombrosos Regalos</a></li>
+							<li><a href="#">Dulces Adiciones</a></li>
+							<li><a href="#">Servicios</a></li>
+							<li><a href="Contacto.html" target="_blank">Contactános</a></li>
 						</ul>
 					</div>
 

@@ -4,12 +4,16 @@
 
 :root {
 	--primary-color: #cb7da2;
-	--background-color: #f8c3c1;
+	--background-color: #fff;
 	--dark-color: #151515;
+}
 
+section[id]{
+	scroll-margin-top:150px;
 }
 
 html {
+	scroll-behavior: smooth;
 	font-size: 62.5%;
 	font-family: 'Poppins', sans-serif;
 }
@@ -59,14 +63,14 @@ header{
     margin: 0;
 	padding-right: 5px;
 	font-family: "Sue Ellen Francisco", cursive;
-	font-weight: 400;
+	font-weight: 500;
 	font-style: normal;
 	font-size: 45px;
 	text-shadow: 
-        2px 2px 0 black,  
-        -2px 2px 0 black, 
-        2px -2px 0 black,
-        -2px -2px 0 black;
+        1.2px 1.2px 0 black,  
+        -1.2px 1.2px 0 black, 
+        1.2px  -1.2px 0 black, 
+        -1.2px -1.2px 0 black;
 }
 
 
@@ -98,12 +102,11 @@ header{
 }
 
 .menu a {
-	
+	cursor: pointer;
 	text-decoration: none;
 	font-size: 1.3rem;
 	color: #fff;
 	font-weight: 600;
-	text-transform: uppercase;
 	position: relative;
 }
 
@@ -127,6 +130,59 @@ header{
 .menu a:hover {
 	color: #000;
 }
+
+/* Estilos generales del menú */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+/* Estilos para el submenú */
+.has-submenu .submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%; /* Para que el submenú aparezca justo debajo del elemento padre */
+    left: 0;
+    background-color: rgba(203, 125, 162, 0.7);
+    display: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.has-submenu .submenu li {
+    padding: 10px;
+}
+
+.has-submenu .submenu li a {
+    padding: 10px 15px;
+    white-space: nowrap; /* Evita que las palabras se rompan en varias líneas */
+}
+
+.has-submenu:hover .submenu {
+    display: block; /* Muestra el submenú al pasar el mouse sobre "Productos" */
+}
+
+/* Opcional: Añadir efecto hover a las opciones del submenú */
+.has-submenu .submenu li a:hover {
+    background-color: #cb7da2;
+	border-radius: 5px
+}
+
 
 .social-icons {
     margin-top: 0px;
@@ -182,7 +238,6 @@ header{
 	background-color: var(--primary-color);
 	display: inline-block;
 	padding: 1rem 3rem;
-	text-transform: uppercase;
 	border-radius: 3rem;
 	font-size: 1.5rem;
 }
@@ -210,7 +265,7 @@ header{
 	justify-content: center;
 	gap: 1.5rem;
 
-	background-color: #fff;
+	background-color: #eae5dd;
 	border-radius: 1rem;
 	padding: 1.5rem 0;
 }
@@ -236,6 +291,7 @@ header{
 	color: #777;
 	font-weight: 500;
 }
+
 
 /* ********************************** */
 /*             CATEGORIES             */
@@ -265,11 +321,41 @@ header{
 }
 
 .category-moca {
-	background-image: linear-gradient(#000000a7, #000000a7),
+	background-image: linear-gradient(#00000080, #00000080),
 		url('../img/moca-category.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	overflow: hidden;
+	transition: height 0.5s;
+	interpolate-size: allow-keywords;
+}
+
+.category-moca p {
+	padding-top: 0;
+	font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+	align-content: center;
+	text-align: center;
+    transition: font-size 0.3s;
+}
+
+.category-moca span{
+	text-align: center;
+	padding: 10px;
+	font-size: 13px;
+    color: #333;
+    display: none;
+    transition: opacity 0.3s;
+}
+.category-moca:hover{
+	height: 400px;
+}
+
+.category-moca:hover span{
+	margin-top: 10px;
+	display: block;
 }
 
 .category-capuchino {
@@ -278,6 +364,37 @@ header{
 	background-size: cover;
 	background-position:center;
 	background-repeat: no-repeat;
+	overflow: hidden;
+	transition: height 0.5s;
+	interpolate-size: allow-keywords;
+}
+
+.category-capuchino p {
+	padding-top: 0;
+	font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+	align-content: center;
+	text-align: center;
+    transition: font-size 0.3s;
+}
+
+.category-capuchino span{
+	text-align: center;
+	padding: 10px;
+	font-size: 13px;
+    color: #333;
+    display: none;
+    transition: opacity 0.3s;
+}
+
+.category-capuchino:hover{
+	height: 400px;
+}
+
+.category-capuchino:hover span{
+	margin-top: 10px;
+	display: block;
 }
 
 .category-expreso {
@@ -286,12 +403,42 @@ header{
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	overflow: hidden;
+	transition: height 0.5s;
+	interpolate-size: allow-keywords;
 }
+
+.category-expreso p {
+	padding-top: 0;
+	font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+	align-content: center;
+	text-align: center;
+    transition: font-size 0.3s;
+}
+
+.category-expreso span{
+	text-align: center;
+	padding: 10px;
+	font-size: 13px;
+    color: #333;
+    display: none;
+    transition: opacity 0.3s;
+}
+
+.category-expreso:hover{
+	height: 400px;
+}
+.category-expreso:hover span{
+	margin-top: 10px;
+	display: block;
+}
+
 
 .card-category p {
 	font-size: 2.5rem;
 	color: #fff;
-	text-transform: uppercase;
 	position: relative;
 	
 }
@@ -312,10 +459,6 @@ header{
 	color: #fff;
 	cursor: pointer;
 	font-weight:600;
-}
-
-.card-category span:hover {
-	color: var(--primary-color);
 }
 
 /* ********************************** */
@@ -363,7 +506,7 @@ header{
 }
 
 .card-product {
-	background-color: #fff;
+	background-color: #eae5dd;
 	padding: 2rem 3rem;
 	border-radius: 0.5rem;
 	cursor: pointer;
@@ -616,7 +759,7 @@ header{
 
 .menu-footer {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr) 30rem;
+	grid-template-columns: repeat(2, 1fr) 30rem;
 	gap: 3rem;
 	justify-items: center;
 }
