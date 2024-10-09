@@ -13,8 +13,12 @@
 * {
   box-sizing: border-box;
 }
-
+/* se agrega imagen de fondo lineas 18 a 21 */
 body {
+  background: url(../img/imageForm1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: 'Arial', sans-serif;
   display: flex;
   justify-content: center;
