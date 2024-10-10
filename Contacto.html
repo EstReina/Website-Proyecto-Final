@@ -9,7 +9,7 @@
     <title>Contacto - Endúlzate</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container-hero">
             <p style="color:#bbe1f0;">E</p>
             <p style="color:#f7bc81;">N</p>
@@ -19,105 +19,132 @@
             <p style="color:#b29fc5">Z</p>
             <p style="color:#e5b240">A</p>
             <p style="color:#cb7da2">T</p>
-            <p style="color:#50a8a5">E</p>
+            <p style="color:#50a8a5">E</p>    
         </div>
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <!-- Submenú de Productos -->
+                    <li class="has-submenu">
+                        <a>Productos</a>
+                        <ul class="submenu">
+                            <li><a href="Desayunos.html">Deliciosos Desayunos</a></li>
+                            <li><a href="Endulzate.html">Endúlzate</a></li>
+                            <li><a href="Adiciones.html">Dulces Adiciones</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#servicios">Servicios</a></li>
+                    <li><a href="index.html#Weare">Sobre nosotros</a></li>
+                    <li><a href="Contacto.html" id="inicio">Contacto</a></li>
+                </ul>
+
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/endulzatemedellin?igsh=djNmdTV0dWI5NGQ0" target="_blank"><img src="/../img/instagram.png" alt="Instagram" class="social-footer"></a>
+                    <a href="https://www.tiktok.com/@endulzatemedellinn?_t=8qMCCEjeyY9&_r=1" target="_blank"><img src="/../img/tiktok.png" alt="TikTok" class="social-footer"></a>
+                    <a href="https://wa.me/573008651888" target="_blank"><img src="/../img/whatsapp.png" alt="WhatsApp" class="social-footer"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
     <div class="login-box">
         <form>
             <h2>Formulario de Contacto</h1>
-            
-            <div class="user-box">
-                <label for="nombre">Nombre</label>
-                <input class="width" type="text" name="nombre" id="nombre" 
-                placeholder="Ingresa tu nombre" required autocomplete="off">
-            </div>
-            
-            <div class="user-box">
-                <label for="apellido">Apellido</label>
-                <input class="width" type="text" name="apellido" id="apellido"
-                placeholder="Ingresa tu apellido" required autocomplete="off">
-            </div>
-
-            <div class="user-box">
-                <label for="email">Correo Electronico</label>
-                <input class="width" type="email" name="email" id="email"
-                placeholder="ejemplo@mail.com" required autocomplete="off">
-            </div>
-            
-
-            <div class="user-box">
-                <label for="telefono">Telefono</label>
-                <input class="width" type="tel" name="telefono" id="telefono"
-                placeholder="Ingresa tu numero de telefono" required autocomplete="off">
-            </div>
-            
-            <!-- <div class="pais">
-                 <label for="pais">País:</label>
-                <select id="pais" name="pais">
-                    <option value="" disabled selected>Seleccione su país</option>
-                    <option value="Colombia">Colombia</option>
-                    <option value="Mexico">México</option>
-                    <option value="Argentina">Argentina</option>
-                    <option value="España">España</option>
-                    <option value="Otro">Otro</option>
+            <div class="form-content">
+                <div class="user-box">
+                    <label for="nombre">Nombre</label>
+                    <input class="width" type="text" name="nombre" id="nombre" 
+                    placeholder="Ingresa tu nombre" required autocomplete="off">
+                </div>
                 
-            </div> -->
-            <div class="pais">
-                <label for="country">País:</label>
-                <select id="pais" name="pais" required>
-                    <option value="" disabled selected>Seleccione su país</option>
-                    <option value="Colombia">Colombia</option>
-                    <option value="Mexico">México</option>
-                    <option value="Argentina">Argentina</option>
-                    <option value="España">España</option>
-                    <option value="Otro">Otro</option>
-                </select>
-            </div>
-           
+                <div class="user-box">
+                    <label for="apellido">Apellido</label>
+                    <input class="width" type="text" name="apellido" id="apellido"
+                    placeholder="Ingresa tu apellido" required autocomplete="off">
+                </div>
 
-        <div id="city-container" class="hidden">
-            <label for="city">Ciudad (solo para Colombia):</label>
-            <select id="city" name="city">
-                <option value="" disabled selected>Seleccione su ciudad</option>
-                <option value="Bogota">Bogotá</option>
-                <option value="Medellin">Medellín</option>
-                <option value="Cali">Cali</option>
-                <option value="Barranquilla">Barranquilla</option>
-                <option value="Cartagena">Cartagena</option>
-            </select>
-        </div>
+                <div class="user-box">
+                    <label for="email">Correo Electronico</label>
+                    <input class="width" type="email" name="email" id="email"
+                    placeholder="ejemplo@mail.com" required autocomplete="off">
+                </div>
+                
 
-        <div id="other-country-container" class="hidden">
-            <label for="other-country">Escribe tu país:</label>
-            <input type="text" id="other-country" name="other-country" placeholder="Ingresa tu país">
-        </div>
+                <div class="user-box">
+                    <label for="telefono">Telefono</label>
+                    <input class="width" type="tel" name="telefono" id="telefono"
+                    placeholder="Ingresa tu numero de telefono" required autocomplete="off">
+                </div>
+                
+                <!-- <div class="pais">
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais">
+                        <option value="" disabled selected>Seleccione su país</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Mexico">México</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="España">España</option>
+                        <option value="Otro">Otro</option>
+                    
+                </div> -->
+                <div class="pais">
+                    <label for="country">País:</label>
+                    <select id="pais" name="pais" required>
+                        <option value="" disabled selected>Seleccione su país</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Mexico">México</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="España">España</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
             
-        <div>
-            <label for="ofertas">
-                ¿Deseas recibir ofertas especiales por correo electrónico?
-            </label>
-            <div class="checkbox-option">
-                <input type="checkbox" id="ofertas" name="ofertas" value="si">
-                <label class="nonbold" for="ofertas">Sí, deseo recibir ofertas.</label>
+
+                <div id="city-container" class="hidden">
+                    <label for="city">Ciudad (solo para Colombia):</label>
+                    <select id="city" name="city">
+                        <option value="" disabled selected>Seleccione su ciudad</option>
+                        <option value="Bogota">Bogotá</option>
+                        <option value="Medellin">Medellín</option>
+                        <option value="Cali">Cali</option>
+                        <option value="Barranquilla">Barranquilla</option>
+                        <option value="Cartagena">Cartagena</option>
+                    </select>
+                </div>
+
+                <div id="other-country-container" class="hidden">
+                    <label for="other-country">Escribe tu país:</label>
+                    <input type="text" id="other-country" name="other-country" placeholder="Ingresa tu país">
+                </div>
+                    
+                <div>
+                    <label for="ofertas">
+                        ¿Deseas recibir ofertas especiales por correo electrónico?
+                    </label>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="ofertas" name="ofertas" value="si">
+                        <label class="nonbold" for="ofertas">Sí, deseo recibir ofertas.</label>
+                    </div>
+                </div>
+                    
+            
+                <div class="Com_Add">
+                    <label for="mensaje">Comentarios adicionales</label>
+                    <textarea name="mensaje" id="mensaje" rows="4" cols="30"
+                    placeholder="Escribe aquí tus comentarios"></textarea>
+                </div>
             </div>
-        </div>
-            
-    
-        <div class="Com_Add">
-            <label for="mensaje">Comentarios adicionales</label>
-            <textarea name="mensaje" id="mensaje" rows="4" cols="30"
-            placeholder="Escribe aquí tus comentarios"></textarea>
-        </div>
-    
-            
-        <div class="divfile">
-            <label class="custom-file-upload" for="archivo">
-            <span class="material-symbols-outlined">
-                upload_file
-            </span>Subir un archivo (opcional):</label>
-            <input type="file" id="archivo" name="archivo">
-            <input type="submit" value="Enviar formulario">
-        </div>
-    
+            <div class="buttons">
+                <div class="divfile">
+                    <label class="custom-file-upload" for="archivo">
+                    <span class="material-symbols-outlined">
+                        upload_file
+                    </span>Subir un archivo (opcional):</label>
+                    <input type="file" id="archivo" name="archivo">
+                    <input type="submit" value="Enviar formulario">
+                </div>
+            </div>
         </form>
     </div>
     <script src="js/main.js"></script>    
