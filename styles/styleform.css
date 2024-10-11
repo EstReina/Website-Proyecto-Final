@@ -194,8 +194,10 @@ body {
 
 .login-box{
   padding-top: 5px;
-  width: 50%;
+  width: 100%;
   align-items: center;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
 }
 form {
@@ -317,48 +319,7 @@ textarea {
 .buttons{
   margin: 0 auto;
   text-align: center;
-  align-items: center;
-  padding-left: 90px;
 }
-
-input[type="file"] {
-  margin-bottom: 20px;
-}
-
-input[type="file"] {
-  display: none;
-}
-
-.divfile{
-  display: flex;
-}
-
-.custom-file-upload {
-  margin-right: 20px;
-  border-radius: 20px;
-  display: inline-block;
-  padding: 6px 12px;
-  cursor: pointer;
-  background-color: #cb7da2;
-  color: white;
-}
-
-.custom-file-upload {
-  font-size: 13px;
-  text-align: center;
-}
-
-.material-symbols-outlined {
-  text-align: start;
-  vertical-align:middle ;
-  padding-right: 5px;
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
-
 /*Boton Envio y Reset*/
 
 input[type="submit"] {
