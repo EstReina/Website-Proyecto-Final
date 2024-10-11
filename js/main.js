@@ -32,3 +32,24 @@ document.getElementById('inicio').addEventListener('click', function(event) {
         behavior: 'smooth' // Desplazamiento suave
     });
 });
+
+
+//Recoger datos del formulario y convertirlos en JSON
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evitar el envío del formulario
+
+    // Crear un objeto FormData para obtener los datos del formulario
+    let formData = new FormData(event.target);
+
+    // Convertir los datos del FormData a un objeto
+    let formObject = {};
+    formData.forEach((value, key) => {
+        formObject[key] = value;
+    });
+
+    // Convertir el objeto a JSON
+    let formJSON = JSON.stringify(formObject);
+
+    // Mostrar el JSON en consola o puedes enviarlo a un servidor
+    console.log(formJSON);
+});
