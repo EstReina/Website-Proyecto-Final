@@ -53,4 +53,3 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     // Mostrar el JSON en consola o puedes enviarlo a un servidor
     console.log(formJSON);
 });
-
