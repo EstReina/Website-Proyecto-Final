@@ -613,6 +613,15 @@ header{
 	margin-left: 0.5rem;
 }
 
+.card-product .desc {
+	font-size: 1.2rem;
+	text-align: justify; /* Justifica el texto horizontalmente */
+	display: flex;      /* Utilizamos flexbox para centrar el contenido */
+	justify-content: center; /* Centra horizontalmente */
+	align-items: center; /* Centra verticalmente si es necesario */
+	flex-direction: column; /* Asegura que el texto quede en una columna */
+  }
+
 /* ********************************** */
 /*               GALLERY              */
 /* ********************************** */
